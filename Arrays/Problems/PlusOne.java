@@ -6,20 +6,25 @@ public class PlusOne {
     
     public static void main(String[] args) {
         
-        int arr[] = {2,9,9,9,9,9,9,9};
+        int digits[] = {1,3,2,9,9};
 
-        for (int i = arr.length-1; i >= 0; i--) {
-            
-            if (i < 9) {
-                arr[i]++;
-                System.out.println(Arrays.toString(arr));
+        System.out.println("Output : " + Arrays.toString(plusOne(digits)));
             }
-            arr[i]=0;
-        }
         
-        arr = new int[arr.length + 1];
-        arr[0] = 1;
-        System.out.println(Arrays.toString(arr));
+    public static int[] plusOne(int[] digits) {
+        
+        int n = digits.length;
+        for (int i = n-1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            
+            }
+            digits[i] = 0;
+        }
+        int[] result = new int[n + 1];
+        result[0] = 1;
+        return result;
 
     }
 }
