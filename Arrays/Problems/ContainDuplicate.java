@@ -8,17 +8,17 @@ public class ContainDuplicate {
 
     public static void main(String[] args) {
         
-        int a[] = {1,2,3,4};
+        int a[] = {1,2,3,4,1};
 
         Map<Integer, Integer> map = new HashMap<>();
         for (int i : a) {
-            map.put(i,i);
+            if (!map.containsKey(i)) {
+                map.put(i,i);
+            }
+            else{
+                return true;
+            }
         }
-        if (a.length > map.size()) {
-            System.out.println("true");
-        }
-        else{
-            System.out.println("false");
-        }
+        return false;
     }
 }
