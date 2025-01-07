@@ -10,6 +10,12 @@ public class ContainDuplicate {
         
         int a[] = {1,2,3,4,1};
 
+        boolean output = dup(a);
+        System.out.println(output);
+    }
+
+    public static boolean dup(int[] a) {
+        
         Map<Integer, Integer> map = new HashMap<>();
         for (int i : a) {
             if (!map.containsKey(i)) {
