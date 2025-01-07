@@ -16,6 +16,7 @@ public class ContainDuplicate {
 
     public static boolean dup(int[] a) {
         
+        //using map : beats 72.43% , with runtime 11ms
         Map<Integer, Integer> map = new HashMap<>();
         for (int i : a) {
             if (!map.containsKey(i)) {
