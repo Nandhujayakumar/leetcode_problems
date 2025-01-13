@@ -1,8 +1,5 @@
 package Problems;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ContainMostWater {
     
     public static void main(String[] args) {
