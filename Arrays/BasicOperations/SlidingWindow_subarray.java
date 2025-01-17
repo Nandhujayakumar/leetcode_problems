@@ -4,8 +4,8 @@ public class SlidingWindow_subarray {
     
     public static void main(String[] args) {
         
-        int a[] = {100,200,300,400};
-        int k = 2;
+        int a[] = {100,200,300,400,500};
+        int k = 3;
         int n = a.length;
 
         int sum = 0;
