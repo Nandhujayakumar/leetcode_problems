@@ -1,6 +1,6 @@
 public class trial {
     public static void main(String[] args) {
         
-        int day = 6 ;
+        int day =   6 ;
     }
 }
